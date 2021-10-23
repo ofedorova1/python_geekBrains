@@ -13,7 +13,7 @@ else:
         if my_list[i] == numb:
             reversed_list_index = my_list[::-1].index(numb)
             idx = len(my_list) - 1 - reversed_list_index
-            my_list.insert(idx, numb)
+            my_list.insert(idx+1, numb)
             break
         else:
             if my_list[i] > numb and my_list[i + 1] < numb:
